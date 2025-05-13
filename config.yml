@@ -1,0 +1,60 @@
+#Config file for Boosting Elytra
+
+###################################################################################################
+#Default settings used for filling out missing Boosting Elytra stats
+#Note, these changes are not retroactive, all previously made Boosting Elytra stay the same
+#Currently also used for the built-in Armored Elytra
+###################################################################################################
+
+#Boost duration in ticks
+default-flight-time: 240
+
+#Velocity applied per tick using the boost
+default-flight-acceleration: 0.038
+
+#Boost duration recovered per tick when on the ground
+default-flight-recovery: 4
+
+#Particle used while boosting, check "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html" for particle names
+default-flight-particle: "END_ROD"
+
+#Typically left on minecraft:air, only change when using particles that require a block material, such as FALLING_DUST
+default-extra-value: "minecraft:air"
+
+#Distance particles are spread out in all directions, measured in blocks
+default-particle-offset: 1.5
+
+#Particle speed, can be used to make particles move in random directions
+default-particle-speed: 0
+
+#Amount of particles spawned every tick spent using the boost
+default-particle-count: 5
+
+#Whether the Boosting Elytra has multiplied velocity and passive boost recovery in water, by default the boost is too weak to work in water
+default-waterboost: false
+
+#Whether the Boosting ELytra is to be set to Unbreakable
+default-unbreakable: false
+
+#The item display name
+default-elytra-name: "\u00A7eBoosting Elytra"
+
+###################################################################################################
+#Misc settings added for configurability
+###################################################################################################
+
+#Angle the player has to look at to launch with the Elytra
+takeoff-angle: -30
+
+#Percentage of boost duration taken when performing a takeoff
+takeoff-boost-cost-percentage: 30
+
+#Multiplies the flight acceleration once, to launch the player
+takeoff-boost-multiplier: 15
+
+#Larger cloud of particles to show the player took off
+takeoff-particle-count: 50
+takeoff-particle-spread: 1.5
+
+#Flight acceleration multiplier in water, to counteract the friction
+waterboost-acceleration-multiplier: 10

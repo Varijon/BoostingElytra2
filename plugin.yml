@@ -1,0 +1,14 @@
+name: BoostingElytra
+author: Varijon
+version: 2.0.0
+api-version: 1.20.6
+main: com.varijon.tinies.BoostingElytra.BoostingElytra
+commands:
+   elytrabook:
+      description: Give Elytra Book
+      usage: /<command>
+      permission: boostingelytra.elytrabook 
+   elytraboosted:
+      description: Give Boosted Elytra
+      usage: /<command>
+      permission: boostingelytra.boostedelytra 
